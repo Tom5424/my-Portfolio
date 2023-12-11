@@ -1,0 +1,36 @@
+<section id="skills" class="mainConatinerMySkills">
+    <img class="shadowInMySkills" src="assets/img/shadow-my-skills.svg">
+    <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="150" class="containerSkillSet">
+        <div *ngFor="let skill of skills" class="containerSingleSkill">
+            <img src="assets/img/{{ skill.imgSkill }}">
+            <p>{{ skill.skillName }}</p>
+        </div>
+    </div>
+
+
+    <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="150" class="containerSkillSetRightSite">
+        <div class="containerHeadlineMySkills">
+            <p>My Skills</p>
+            <hr>
+        </div>
+
+        <div class="childContainerMySkills">
+            <span>
+                I've build some great projects using the following technologies. Once I have a problem, I
+                can't
+                stop until I solve it.
+            </span>
+            <a href="#contact">
+                <button>Get in touch</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!--------------------------- Only for Mobile View --------------------------->
+<div class="containerBtnMobile">
+    <a href="#contact">
+        <button class="d-none btnMobileView">Get in touch</button>
+    </a>
+</div>
+<!--------------------------- Only for Mobile View --------------------------->

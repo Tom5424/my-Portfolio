@@ -1,0 +1,35 @@
+<div (click)="openMobileNavbar()" class="containerBtnMobileMenu">
+    <img [ngClass]="{'rotateLineTop': mobileNavbarIsOpen == true}" class="lineTop d-none"
+        src="assets/img/btn-mobile-menu-line.svg">
+
+    <img [ngClass]="{'scaleMiddleLineDown': mobileNavbarIsOpen == true}" class="lineMiddle d-none"
+        src="assets/img/btn-mobile-menu-line.svg">
+
+    <img [ngClass]="{'rotateLineBottom': mobileNavbarIsOpen == true}" class="lineBottom d-none"
+        src="assets/img/btn-mobile-menu-line.svg">
+</div>
+
+<nav [ngClass]="{'mobileMenuOpen': mobileNavbarIsOpen == true, 'mobileMenuClose': mobileNavbarIsOpen == false}"
+    class="containerMobileMenu">
+    <a href="#aboutMe">
+        <p [ngClass]="{'linkActiveMobile': currentActiveLinkMobile == 'aboutMe'}" (click)="mobileLinkActive('aboutMe')">
+            About me</p>
+    </a>
+
+    <a href="#skills">
+        <p [ngClass]="{'linkActiveMobile': currentActiveLinkMobile == 'mySkills'}"
+            (click)="mobileLinkActive('mySkills')">My
+            skills</p>
+    </a>
+
+    <a href="#portfolio">
+        <p [ngClass]="{'linkActiveMobile': currentActiveLinkMobile == 'portfolio'}"
+            (click)="mobileLinkActive('portfolio')">
+            Portfolio</p>
+    </a>
+
+    <a href="#contact">
+        <p [ngClass]="{'linkActiveMobile': currentActiveLinkMobile == 'contact'}" (click)="mobileLinkActive('contact')">
+            Contact</p>
+    </a>
+</nav>

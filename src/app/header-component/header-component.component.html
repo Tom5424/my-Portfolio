@@ -1,0 +1,24 @@
+<header [ngClass]="{'stickyHeader': headerIsSticky == true}">
+    <a href="#header">
+        <img src="assets/icons/favicon.png">
+    </a>
+
+
+    <app-mobile-menu-navbar></app-mobile-menu-navbar>
+
+
+    <nav class="containerSections">
+        <a [ngClass]="{'linkActive': 'aboutMe' == currentActiveLink}" (click)="activeLink('aboutMe')"
+            href="#aboutMe">About me
+        </a>
+
+        <a [ngClass]="{'linkActive': 'skills' == currentActiveLink}" (click)="activeLink('skills')" href="#skills">
+            Skills
+        </a>
+
+        <a [ngClass]="{'linkActive': 'portfolio' == currentActiveLink}" (click)="activeLink('portfolio')"
+            href="#portfolio">
+            Portfolio
+        </a>
+    </nav>
+</header>

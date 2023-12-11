@@ -1,0 +1,330 @@
+.mainContainerIntroduction {
+    height: 80vh;
+    background-color: #141D2F;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.profileImg {
+    width: 350px;
+    z-index: 1;
+    position: relative;
+}
+
+
+.shadowInIntroduction {
+    width: 700px;
+    position: absolute;
+    left: -170px;
+    z-index: 0;
+}
+
+
+.containerLeftSite {
+    position: relative;
+}
+
+
+.containerRightSite {
+    position: relative;
+    z-index: 2;
+}
+
+
+.texteIAm {
+    color: white;
+    margin: unset;
+    position: absolute;
+    top: 55px;
+    left: -140px;
+    font-weight: 400;
+    font-size: 64px;
+    transform: rotate(-90deg);
+}
+
+
+.textName {
+    color: white;
+    margin: unset;
+    margin-left: -12px;
+    margin-bottom: -25px;
+    font-weight: 700;
+    font-size: 90px;
+}
+
+
+.textFrontendDeveloper {
+    color: #4B47FF;
+    margin: unset;
+    font-weight: 400;
+    font-size: 58px;
+}
+
+
+.btnContainer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    button {
+        font-family: inherit;
+        border: unset;
+        background-color: #00BEE8;
+        color: white;
+        font-weight: 400;
+        font-size: 23px;
+        width: 150px;
+        height: 55px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+
+
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                cursor: pointer;
+                transition: 225ms ease-in-out;
+                background-color: #4B47FF;
+                transform: scale(1.1);
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+            &:active {
+                transition: 225ms ease-in-out;
+                background-color: #4B47FF;
+                transform: scale(1.1);
+            }
+        }
+
+    }
+}
+
+
+/*********************************  Media Queries  *********************************/
+@media screen and (max-width: 2720px) {
+    .shadowInIntroduction {
+        width: 900px;
+        left: -210px;
+    }
+
+    .profileImg {
+        width: 510px;
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .shadowInIntroduction {
+        width: 750px;
+        left: -200px;
+        top: -50px;
+    }
+
+    .profileImg {
+        width: 350px;
+    }
+}
+
+
+@media screen and (max-width: 1450px) {
+    .shadowInIntroduction {
+        width: 650px;
+        left: -160px;
+        top: 0;
+    }
+}
+
+
+@media screen and (max-width: 1286px) {
+    .shadowInIntroduction {
+        width: 650px;
+        left: -140px;
+    }
+}
+
+
+@media screen and (max-width: 1190px) {
+    .texteIAm {
+        font-size: 60px;
+        top: 49px;
+        left: -120px;
+    }
+
+    .textName {
+        font-size: 80px;
+    }
+
+    .textFrontendDeveloper {
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .mainContainerIntroduction {
+        flex-direction: column;
+        justify-content: unset;
+        gap: 0;
+    }
+
+    .shadowInIntroduction {
+        width: 600px;
+    }
+
+    .profileImg {
+        width: 290px;
+    }
+
+    .btnContainer {
+        margin-top: 0;
+    }
+
+    .containerRightSite {
+        padding-left: 70px;
+    }
+
+    .texteIAm {
+        top: 49px;
+        left: -50px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .shadowInIntroduction {
+        width: 500px;
+        left: -125px;
+    }
+
+    .texteIAm {
+        font-size: 44px;
+        top: 40px;
+        left: -25px;
+    }
+
+    .textName {
+        font-size: 70px;
+    }
+
+    .textFrontendDeveloper {
+        font-size: 38px;
+    }
+}
+
+
+@media screen and (max-width: 510px) {
+    .mainContainerIntroduction {
+        gap: 50px;
+    }
+
+    .profileImg {
+        width: 250px;
+    }
+
+    .texteIAm {
+        font-size: 34px;
+        top: 35px;
+        left: -30px;
+    }
+
+    .textName {
+        font-size: 60px;
+        margin-left: -8px;
+    }
+
+    .textFrontendDeveloper {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .shadowInIntroduction {
+        width: 400px;
+        left: -95px;
+    }
+
+    .containerRightSite {
+        padding-left: 40px;
+    }
+
+    .btnContainer {
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .containerRightSite {
+        padding-left: 20px;
+    }
+
+    .profileImg {
+        width: 230px;
+    }
+
+    .texteIAm {
+        font-size: 30px;
+        top: 27px;
+        left: -45px;
+    }
+
+    .textName {
+        font-size: 45px;
+    }
+
+    .textFrontendDeveloper {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .shadowInIntroduction {
+        width: 350px;
+        left: -75px;
+        top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 330px) {
+    .shadowInIntroduction {
+        width: 290px;
+        left: -55px;
+        top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    .profileImg {
+        width: 200px;
+        padding-top: 40px;
+    }
+
+    .texteIAm {
+        font-size: 25px;
+        top: 23px;
+        left: -30px;
+    }
+
+    .textName {
+        font-size: 40px;
+        margin-left: -5px;
+    }
+
+    .textFrontendDeveloper {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .shadowInIntroduction {
+        top: 40px;
+    }
+
+    .btnContainer {
+        margin-right: 30px;
+    }
+}
+
+/*********************************  Media Queries  *********************************/

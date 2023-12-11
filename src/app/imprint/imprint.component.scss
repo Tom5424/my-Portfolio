@@ -1,0 +1,70 @@
+.maincontainerImprint {
+    background-color: #141D2F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin: unset;
+    }
+
+    a {
+        color: #00BEE8;
+    }
+}
+
+
+/*********************************  Media Queries  *********************************/
+@media screen and (max-width: 2720px) {
+    .maincontainerImprint {
+        height: 81vh;
+        justify-content: center;
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .maincontainerImprint {
+        height: unset;
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1286px) {
+    .maincontainerImprint {
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .maincontainerImprint {
+        height: 57vh;
+
+        h1 {
+            font-size: 23px;
+        }
+
+        h2 {
+            font-size: 17px
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+}
+
+/*********************************  Media Queries  *********************************/

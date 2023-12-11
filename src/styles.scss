@@ -1,0 +1,63 @@
+// /* poppins-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/poppins-v20-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: url('./assets/fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('./assets/fonts/poppins-v20-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('./assets/fonts/poppins-v20-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('./assets/fonts/poppins-v20-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('./assets/fonts/poppins-v20-latin-regular.svg#Poppins') format('svg');
+    /* Legacy iOS */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+
+a {
+    text-decoration: unset;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #141D2F;
+    border: 1px solid;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #00BEE8;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: #64b1c3;
+    }
+}
+
+
+.d-none {
+    display: none;
+}

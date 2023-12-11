@@ -1,0 +1,528 @@
+.mainconatinerAboutMe {
+    background-color: #141D2F;
+    padding-top: 100px;
+}
+
+
+.arc {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 130px;
+}
+
+
+.mainContainerAboutMeUpperPart {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.containerTextScrollDown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    gap: 35px;
+
+    p {
+        color: white;
+        font-size: 23px;
+        font-weight: 400;
+        transform: rotate(90deg);
+    }
+
+    img {
+        width: 16px !important;
+
+        &:hover {
+            cursor: unset;
+            transform: unset !important;
+        }
+    }
+}
+
+
+.containerAboutMeUpperPart {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    gap: 25px;
+
+    img {
+        width: 30px;
+
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover {
+                transition: all 225ms ease-in-out;
+                transform: scale(1.3);
+            }
+        }
+    }
+
+    hr {
+        width: 100px;
+        height: 4px;
+        margin-bottom: 7px !important;
+        border-radius: 5px;
+        margin: unset;
+        border: unset;
+        background-color: #4B47FF;
+    }
+}
+
+
+.emailAddress {
+    color: white;
+    font-size: 23px;
+    font-weight: 400;
+    padding-bottom: 5px;
+    margin: unset;
+}
+
+
+.containerAboutMeLowerPart {
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.containerAboutMeLeftSite {
+    width: 50%;
+    gap: 30px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+
+    span {
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+
+.headlineAboutMe {
+    color: white;
+    font-weight: 700;
+    font-size: 90px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+.containerIdeaToCoding {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    margin-left: 30px;
+
+    img {
+
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover {
+                transition: all 225ms ease-in-out;
+                transform: scale(1.2);
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                transition: all 225ms ease-in-out;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+
+.containerProofToCoding {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 30px;
+
+    img {
+
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover {
+                transition: all 225ms ease-in-out;
+                transform: scale(1.2);
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                transition: all 225ms ease-in-out;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+
+.containerAboutMeRightSite {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    hr {
+        width: 200px;
+        height: 4px;
+        background-color: #00BEE8;
+        border: unset;
+        margin: unset;
+    }
+}
+
+
+.profileImgAboutMe {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 4px solid #00BEE8;
+    object-fit: cover;
+}
+
+
+.shadowInAboutMe {
+    width: 280px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    z-index: -1;
+}
+
+
+/*********************************  Media Queries  *********************************/
+@media screen and (max-width: 2720px) {
+    .mainconatinerAboutMe {
+        padding-top: 110px;
+    }
+
+    .arc {
+        top: 80px;
+    }
+
+    .containerAboutMeLeftSite {
+
+        span {
+            font-size: 18px;
+        }
+    }
+
+    .profileImgAboutMe {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+
+@media screen and (max-width: 2450px) {
+    .arc {
+        top: 150px;
+    }
+}
+
+
+@media screen and (max-width: 2250px) {
+    .arc {
+        top: 210px;
+    }
+}
+
+
+@media screen and (max-width: 2000px) {
+    .arc {
+        top: 280px;
+    }
+}
+
+
+@media screen and (max-width: 1800px) {
+    .arc {
+        top: 330px;
+    }
+}
+
+
+@media screen and (max-width: 1650px) {
+    .arc {
+        top: 340px;
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .arc {
+        top: 270px;
+    }
+
+    .containerAboutMeLeftSite {
+
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .profileImgAboutMe {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
+@media screen and (max-width: 1536px) {
+    .arc {
+        top: 120px;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    .arc {
+        top: 175px;
+    }
+}
+
+
+@media screen and (max-width: 1286px) {
+    .containerAboutMeLeftSite {
+        margin-left: 40px;
+    }
+
+    .containerAboutMeRightSite {
+
+        hr {
+            width: 100px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1190px) {
+    .arc {
+        top: 250px;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+    .containerAboutMeLeftSite {
+        margin-left: 30px;
+    }
+
+    .containerAboutMeRightSite {
+
+        hr {
+            width: 60px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .mainconatinerAboutMe {
+        padding-top: 200px;
+    }
+
+    .arc {
+        top: 190px;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    .containerAboutMeLeftSite {
+        width: 100%;
+        margin-left: 60px;
+        z-index: 1;
+
+        span {
+            width: 90%;
+        }
+    }
+
+    .containerIdeaToCoding {
+        width: 90%;
+    }
+
+    .containerProofToCoding {
+        width: 90%;
+    }
+
+    .containerAboutMeRightSite {
+
+        hr {
+            display: none;
+        }
+    }
+
+    .profileImgAboutMe {
+        display: none;
+    }
+
+    .shadowInAboutMe {
+        bottom: 0;
+    }
+
+    .containerTextScrollDown {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .arc {
+        top: 220px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .arc {
+        top: 250px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .arc {
+        top: 300px;
+    }
+
+    .containerAboutMeUpperPart {
+        padding-top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .containerAboutMeLeftSite {
+        margin-left: 35px;
+    }
+
+    .containerIdeaToCoding {
+        margin-left: 15px;
+    }
+
+    .containerProofToCoding {
+        margin-left: 15px;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    .containerAboutMeUpperPart {
+        gap: 45px;
+    }
+
+    .emailAddress {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 510px) {
+    .headlineAboutMe {
+        font-size: 75px;
+    }
+
+    .containerIdeaToCoding {
+        margin-left: 0;
+    }
+
+    .containerProofToCoding {
+        margin-left: 0;
+    }
+
+    .arc {
+        top: 260px;
+    }
+}
+
+
+@media screen and (max-width: 440px) {
+    .containerAboutMeLeftSite {
+        margin-left: 25px;
+    }
+
+    .headlineAboutMe {
+        font-size: 60px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .containerAboutMeUpperPart {
+        gap: 35px;
+
+        hr {
+            width: 85px;
+        }
+    }
+
+    .arc {
+        top: 270px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .containerAboutMeUpperPart {
+
+        hr {
+            width: 60px;
+        }
+    }
+
+    .containerAboutMeLeftSite {
+        margin-left: 15px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    .headlineAboutMe {
+        font-size: 45px;
+    }
+
+    .containerIdeaToCoding {
+        gap: 28px;
+
+        img {
+            width: 35px;
+        }
+    }
+
+    .containerProofToCoding {
+
+        img {
+            width: 35px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    .arc {
+        top: 290px;
+    }
+
+    .containerAboutMeUpperPart {
+        gap: 30px;
+    }
+}
+
+/*********************************  Media Queries  *********************************/

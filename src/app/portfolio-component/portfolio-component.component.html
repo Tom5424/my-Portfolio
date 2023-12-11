@@ -1,0 +1,34 @@
+<section id="portfolio" class="mainContainerPortfolio">
+    <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="150" class="containerPortfolioUpperPart">
+        <hr class="blueLineLeft">
+        <p>Portfolio</p>
+        <hr class="blueLineRight">
+    </div>
+    <p data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="150" class="text">
+        This page is an example of my work - feel free to try out the projects.
+    </p>
+
+
+    <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="150"
+        [ngClass]="{'rowReverse': project.projectTitle == 'Sharkie'}" class="containerPortfolioLowerPart"
+        *ngFor="let project of projects">
+        <img src="assets/img/{{ project.imgProject }}">
+
+        <div class="containerProject">
+            <p class="projectTitle">{{ project.projectTitle }}</p>
+            <p class="technologiesToBuild">{{ project.technologiesToBuild }}</p>
+            <span class="projectDescription">{{ project.projectDescription }}</span>
+            <div class="btnContainer">
+                <a [ngClass]="{'d-none': project.linkLiveTest == ''}" href="{{ project.linkLiveTest }}" target="_blank">
+                    <button class="btnLiveTest">Live test</button>
+                </a>
+
+                <a href="{{ project.linkGithub }}" target="_blank">
+                    <button class="btnGithub">Github</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <img class="shadowPortfolio" src="assets/img/shadow-portfolio.svg">
+    <img class="lightShadowPortfolio" src="assets/img/light-shadow-portfolio.svg">
+</section>

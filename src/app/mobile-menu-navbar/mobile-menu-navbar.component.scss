@@ -1,0 +1,129 @@
+.containerBtnMobileMenu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    gap: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+.lineTop {
+    width: 40px;
+    position: relative;
+    top: 0;
+    transition: all 225ms ease-in-out;
+    transform: rotate(0deg);
+}
+
+
+.lineBottom {
+    width: 40px;
+    position: relative;
+    bottom: 0;
+    transition: all 225ms ease-in-out;
+    transform: rotate(0deg);
+}
+
+
+.lineMiddle {
+    width: 40px;
+    transition: all 225ms ease-in-out;
+    transform: scale(1);
+}
+
+
+.scaleMiddleLineDown {
+    transition: all 225ms ease-in-out;
+    transform: scale(0);
+}
+
+
+.rotateLineTop {
+    position: relative;
+    top: 14px;
+    transition: all 225ms ease-in-out;
+    transform: rotate(45deg);
+}
+
+
+.rotateLineBottom {
+    position: relative;
+    bottom: 11px;
+    transition: all 225ms ease-in-out;
+    transform: rotate(-45deg);
+}
+
+
+.containerMobileMenu {
+    background-color: #09101bb3;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 3;
+}
+
+
+.mobileMenuOpen {
+    transition: all 225ms ease-in-out;
+    transform: translateX(0);
+}
+
+
+.mobileMenuClose {
+    transition: all 225ms ease-in-out;
+    transform: translateX(-100%);
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: white;
+        font-weight: 400;
+        font-size: 23px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+            &:active {
+                transition: 225ms ease-in-out;
+                color: #00BEE8;
+                border-bottom: 3px solid #4B47FF;
+            }
+        }
+    }
+}
+
+
+.linkActiveMobile {
+    transition: all 225ms ease-in-out;
+    color: #00BEE8 !important;
+    border-bottom: 3px solid #4B47FF;
+}
+
+
+/*********************************  Media Queries  *********************************/
+@media screen and (max-width: 540px) {
+
+    .lineBottom,
+    .lineMiddle,
+    .lineTop {
+        display: flex;
+        width: 35px;
+    }
+}
+
+/*********************************  Media Queries  *********************************/

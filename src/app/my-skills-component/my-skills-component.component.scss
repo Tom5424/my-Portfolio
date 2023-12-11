@@ -1,0 +1,453 @@
+.mainConatinerMySkills {
+    padding-top: 200px;
+    z-index: 2;
+    position: relative;
+    background-color: #141D2F;
+    display: flex;
+}
+
+
+.containerSkillSet {
+    width: 50%;
+    z-index: 2;
+    padding-left: 40px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.containerSingleSkill {
+    width: 25%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                transition: all 225ms ease-in-out;
+                animation: bounce-top 590ms ease-in-out;
+            }
+        }
+    }
+
+    p {
+        color: white;
+        margin-bottom: 0;
+        margin-top: 5px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
+
+.shadowInMySkills {
+    width: 280px;
+    position: absolute;
+    top: 0;
+}
+
+
+.containerSkillSetRightSite {
+    width: 50%;
+
+    p {
+        color: white;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 90px;
+    }
+
+    span {
+        color: white;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+
+    button {
+        font-family: inherit;
+        color: white;
+        width: 190px;
+        height: 55px;
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 23px;
+        background-color: #00BEE8;
+        border: unset;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                cursor: pointer;
+                transition: all 225ms ease-in-out;
+                transform: scale(1.1);
+                background-color: #4B47FF;
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+            &:active {
+                transition: all 225ms ease-in-out;
+                transform: scale(1.1);
+                background-color: #4B47FF;
+            }
+        }
+    }
+
+    hr {
+        width: 150px;
+        height: 4px;
+        border-radius: 5px;
+        background-color: #4B47FF;
+        border: unset;
+        margin: unset;
+    }
+}
+
+
+.containerHeadlineMySkills {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.childContainerMySkills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.containerBtnMobile {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #141D2F;
+}
+
+
+.btnMobileView {
+    font-family: inherit;
+    color: white;
+    position: relative;
+    z-index: 2;
+    width: 190px;
+    height: 55px;
+    font-weight: 400;
+    font-size: 23px;
+    background-color: #00BEE8;
+    border: unset;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            cursor: pointer;
+            transition: all 225ms ease-in-out;
+            transform: scale(1.1);
+            background-color: #4B47FF;
+        }
+    }
+
+
+    @media (hover: none) and (pointer: coarse) {
+        &:active {
+            transition: all 225ms ease-in-out;
+            transform: scale(1.1);
+            background-color: #4B47FF;
+        }
+    }
+}
+
+
+@keyframes bounce-top {
+    0% {
+        transform: translateY(0);
+        animation-timing-function: ease-in;
+    }
+
+    40% {
+        transform: translateY(-25px);
+        animation-timing-function: ease-in;
+    }
+
+    65% {
+        transform: translateY(-20px);
+        animation-timing-function: ease-in;
+    }
+
+    82% {
+        transform: translateY(-15px);
+        animation-timing-function: ease-in;
+    }
+
+    93% {
+        transform: translateY(-4px);
+        animation-timing-function: ease-in;
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+    }
+}
+
+
+/*********************************  Media Queries  *********************************/
+@media screen and (max-width: 2720px) {
+    .containerSingleSkill {
+        width: 20%;
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .containerSkillSetRightSite {
+
+        hr {
+            width: 37%;
+        }
+
+        span {
+            font-size: 18px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 2300px) {
+    .containerSkillSetRightSite {
+
+        hr {
+            width: 32%;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 2000px) {
+    .containerSkillSetRightSite {
+
+        hr {
+            width: 28%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .containerSkillSetRightSite {
+
+        span {
+            font-size: 16px;
+        }
+
+        hr {
+            width: 23%;
+        }
+    }
+
+    .containerSingleSkill {
+        width: 25%;
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+    .containerSkillSetRightSite {
+
+        hr {
+            width: 18%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1286px) {
+    .containerSkillSet {
+        padding-left: 0;
+    }
+
+    .containerSkillSetRightSite {
+
+        hr {
+            width: 100px;
+        }
+
+        span {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1150px) {
+    .containerSkillSetRightSite {
+
+        hr {
+            width: 50px;
+        }
+    }
+
+    .containerSingleSkill {
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    .mainConatinerMySkills {
+        flex-direction: column-reverse;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+
+
+    .containerSkillSetRightSite {
+        width: 100%;
+        margin-bottom: 80px;
+
+        span {
+            padding-left: 0;
+            padding-right: 0;
+            width: 80%;
+            text-align: end;
+        }
+
+        button {
+            position: absolute;
+            top: 700px;
+            right: 345px;
+            margin-top: 0;
+            display: none;
+        }
+    }
+
+    .containerSkillSet {
+        width: 100%;
+    }
+
+    .btnMobileView {
+        display: block;
+    }
+
+    .shadowInMySkills {
+        top: 220px;
+        left: 0;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .containerSkillSetRightSite {
+
+        span {
+            width: 70%;
+        }
+    }
+
+    .containerSingleSkill {
+        width: 32%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .containerSkillSetRightSite {
+
+        span {
+            width: 65%;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 75px;
+        }
+    }
+
+    .containerSingleSkill {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .containerSkillSetRightSite {
+
+        span {
+            width: 60%;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 60px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 370px) {
+    .containerSkillSetRightSite {
+
+        span {
+            width: 50%;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 40px;
+        }
+    }
+
+    .containerSingleSkill {
+
+        img {
+            width: 45px;
+        }
+    }
+
+    .shadowInMySkills {
+        width: 230px;
+    }
+}
+
+
+@media screen and (max-width: 290px) {
+    .containerSkillSetRightSite {
+
+        span {
+            width: 37%;
+        }
+    }
+}
+
+/*********************************  Media Queries  *********************************/

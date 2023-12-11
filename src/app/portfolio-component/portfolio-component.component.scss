@@ -1,0 +1,443 @@
+.mainContainerPortfolio {
+    padding-top: 100px;
+    background-color: #141D2F;
+    position: relative;
+    z-index: 1;
+}
+
+
+.text {
+    color: white;
+    text-align: center;
+    margin: unset;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.containerPortfolioUpperPart {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+
+    p {
+        color: white;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 90px;
+    }
+}
+
+
+.blueLineLeft {
+    width: 100px;
+    height: 4px;
+    background-color: #4B47FF;
+    border-radius: 5px;
+    border: unset;
+    margin: unset;
+}
+
+
+.blueLineRight {
+    width: 530px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #4B47FF;
+    border: unset;
+    margin: unset;
+}
+
+
+.containerPortfolioLowerPart {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+        width: 450px;
+    }
+}
+
+
+.containerProject {
+    width: 35%;
+}
+
+
+.projectTitle {
+    color: #4B47FF;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 10px
+}
+
+
+.technologiesToBuild {
+    color: #00BEE8;
+    font-weight: 400;
+    font-size: 23px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.projectDescription {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.btnLiveTest {
+    font-family: inherit;
+    border: unset;
+    color: white;
+    margin-right: 100px;
+    width: 150px;
+    height: 55px;
+    font-weight: 400;
+    font-size: 23px;
+    background-color: #4B47FF;
+    border-radius: 10px;
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            cursor: pointer;
+            transition: all 225ms ease-in-out;
+            background-color: #00BEE8;
+        }
+    }
+
+    @media (hover: none) and (pointer: coarse) {
+        &:active {
+            transition: all 225ms ease-in-out;
+            background-color: #00BEE8;
+        }
+    }
+}
+
+
+.btnContainer {
+    margin-top: 30px;
+}
+
+
+.btnGithub {
+    font-family: inherit;
+    color: white;
+    border: 3px solid #00BEE8;
+    width: 150px;
+    height: 55px;
+    font-weight: 400;
+    font-size: 23px;
+    background-color: #141D2F;
+    border-radius: 10px;
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            cursor: pointer;
+            transition: all 225ms ease-in-out;
+            background-color: #00BEE8;
+        }
+    }
+
+    @media (hover: none) and (pointer: coarse) {
+        &:active {
+            transition: all 225ms ease-in-out;
+            background-color: #00BEE8;
+        }
+    }
+}
+
+
+.shadowPortfolio {
+    position: absolute;
+    bottom: 140px;
+    left: -200px;
+    z-index: -1;
+}
+
+
+.lightShadowPortfolio {
+    position: absolute;
+    bottom: -250px;
+    right: 0;
+    z-index: -1;
+}
+
+
+.rowReverse {
+    flex-direction: row-reverse;
+}
+
+
+/*********************************  Media Queries  *********************************/
+@media screen and (max-width: 2720px) {
+    .blueLineRight {
+        width: 42.5%;
+    }
+
+    .containerProject {
+        width: unset;
+    }
+
+    .containerPortfolioLowerPart {
+
+        img {
+            width: 650px;
+        }
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .projectDescription {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 2300px) {
+    .blueLineRight {
+        width: 40%;
+    }
+
+    .containerProject {
+        width: 35%;
+    }
+
+    .containerPortfolioLowerPart {
+
+        img {
+            width: 550px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1900px) {
+    .blueLineRight {
+        width: 38%;
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .containerPortfolioLowerPart {
+
+        img {
+            width: 450px;
+        }
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .projectDescription {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 1286px) {
+    .blueLineRight {
+        width: 32%;
+    }
+}
+
+
+@media screen and (max-width: 1160px) {
+    .containerProject {
+        width: 42%;
+    }
+}
+
+
+@media screen and (max-width: 1140px) {
+    .blueLineRight {
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .blueLineRight {
+        width: 28%;
+    }
+
+    .containerProject {
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    .containerPortfolioLowerPart {
+        justify-content: unset;
+        flex-direction: column;
+    }
+
+    .containerProject {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -30px;
+        width: 100%;
+    }
+
+    .projectDescription {
+        text-align: center;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .blueLineRight {
+        width: 23%;
+    }
+
+    .containerPortfolioLowerPart {
+
+        img {
+            width: 400px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .containerPortfolioUpperPart {
+        gap: 15px;
+    }
+
+    .blueLineRight {
+        width: 17%;
+    }
+
+    .blueLineLeft {
+        width: 8%;
+    }
+
+    .shadowPortfolio {
+        width: 530px;
+        left: 0;
+        bottom: 110px;
+    }
+
+    .lightShadowPortfolio {
+        width: 300px;
+        bottom: -300px;
+    }
+}
+
+
+@media screen and (max-width: 590px) {
+    .containerPortfolioUpperPart {
+
+        p {
+            font-size: 75px;
+        }
+    }
+
+    .text {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .shadowPortfolio {
+        width: 450px;
+    }
+}
+
+
+
+@media screen and (max-width: 470px) {
+    .containerPortfolioUpperPart {
+
+        p {
+            font-size: 60px;
+        }
+    }
+
+    .containerPortfolioLowerPart {
+
+        img {
+            width: 350px;
+        }
+    }
+
+    .btnLiveTest {
+        margin-right: 50px;
+    }
+
+    .shadowPortfolio {
+        width: 350px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .containerPortfolioLowerPart {
+
+        img {
+            width: 250px;
+        }
+    }
+
+    .projectTitle {
+        font-size: 30px;
+    }
+
+    .technologiesToBuild {
+        font-size: 15px;
+    }
+
+    .projectDescription {
+        font-size: 14px;
+    }
+
+    .btnLiveTest {
+        margin-right: 30px;
+        font-size: 20px;
+        width: 100px;
+    }
+
+    .btnGithub {
+        font-size: 20px;
+        width: 100px;
+    }
+}
+
+
+@media screen and (max-width: 385px) {
+    .containerPortfolioUpperPart {
+
+        p {
+            font-size: 38px;
+        }
+    }
+
+    .blueLineRight {
+        width: 20%;
+    }
+
+    .text {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+    .shadowPortfolio {
+        width: 220px;
+        bottom: 210px;
+    }
+}
+
+/*********************************  Media Queries  *********************************/
