@@ -17,8 +17,11 @@ export class MobileMenuNavbarComponent {
   openMobileNavbar() {
     if (!this.mobileNavbarIsOpen) {
       this.mobileNavbarIsOpen = true;
+      document.body.style.overflowY = 'hidden';
     } else if (this.mobileNavbarIsOpen) {
       this.mobileNavbarIsOpen = false;
+      document.body.style.overflowY = 'auto';
+      this.currentActiveLinkMobile = '';
     }
   }
 

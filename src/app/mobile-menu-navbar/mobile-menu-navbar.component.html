@@ -11,25 +11,23 @@
 
 <nav [ngClass]="{'mobileMenuOpen': mobileNavbarIsOpen == true, 'mobileMenuClose': mobileNavbarIsOpen == false}"
     class="containerMobileMenu">
-    <a href="#aboutMe">
-        <p [ngClass]="{'linkActiveMobile': currentActiveLinkMobile == 'aboutMe'}" (click)="mobileLinkActive('aboutMe')">
-            About me</p>
+    <a [ngClass]="{'linkActiveMobile': currentActiveLinkMobile == 'aboutMe'}" (click)="mobileLinkActive('aboutMe')"
+        href="#aboutMe">
+        About me
     </a>
 
-    <a href="#skills">
-        <p [ngClass]="{'linkActiveMobile': currentActiveLinkMobile == 'mySkills'}"
-            (click)="mobileLinkActive('mySkills')">My
-            skills</p>
+    <a [ngClass]="{'linkActiveMobile': currentActiveLinkMobile == 'mySkills'}" (click)="mobileLinkActive('mySkills')"
+        href="#skills">
+        My skills
     </a>
 
-    <a href="#portfolio">
-        <p [ngClass]="{'linkActiveMobile': currentActiveLinkMobile == 'portfolio'}"
-            (click)="mobileLinkActive('portfolio')">
-            Portfolio</p>
+    <a [ngClass]="{'linkActiveMobile': currentActiveLinkMobile == 'portfolio'}" (click)="mobileLinkActive('portfolio')"
+        href="#portfolio">
+        Portfolio
     </a>
 
-    <a href="#contact">
-        <p [ngClass]="{'linkActiveMobile': currentActiveLinkMobile == 'contact'}" (click)="mobileLinkActive('contact')">
-            Contact</p>
+    <a (click)="mobileLinkActive('contact')" [ngClass]="{'linkActiveMobile': currentActiveLinkMobile == 'contact'}"
+        href="#contact">
+        Contact
     </a>
 </nav>
