@@ -266,8 +266,11 @@
 label {
     color: white;
 
-    input {
+    &:hover {
+        cursor: pointer;
+    }
 
+    input {
         &:hover {
             cursor: pointer;
         }
@@ -275,6 +278,10 @@ label {
 
     a {
         color: #4B47FF;
+
+        &:hover {
+            border-bottom: 2px solid #4B47FF;
+        }
     }
 }
 
@@ -357,55 +364,30 @@ label {
 }
 
 
-.infoMailSend {
-    gap: 30px;
-    height: 250px;
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #6a69692e;
+}
+
+
+.userFeedbackMailSend {
+    width: 300px;
     background-color: #141D2F;
     border: 3px solid #00BEE8;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 550px;
-    left: 300px;
-    right: 300px;
 
     p {
         color: white;
-        margin: unset;
         text-align: center;
-        font-size: 50px;
+        font-size: 25px;
         font-weight: 700;
-    }
-
-    button {
-        font-family: inherit;
-        border: unset;
-        color: white;
-        width: 150px;
-        height: 55px;
-        font-weight: 400;
-        font-size: 23px;
-        background-color: #4B47FF;
-        border-radius: 10px;
-
-        @media (hover: hover) and (pointer: fine) {
-            &:hover {
-                cursor: pointer;
-                transition: all 225ms ease-in-out;
-                background-color: #00BEE8;
-            }
-        }
-
-        @media (hover: none) and (pointer: coarse) {
-            &:active {
-                transition: all 225ms ease-in-out;
-                background-color: #00BEE8;
-            }
-        }
-
     }
 }
 
@@ -434,11 +416,11 @@ label {
 
 
 .scaleInCenter {
-    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scaleInCenter 350ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
-@keyframes scale-in-center {
+@keyframes scaleInCenter {
     0% {
         transform: scale(0);
         opacity: 1;
@@ -742,11 +724,6 @@ label {
 
 
 @media screen and (max-width: 1190px) {
-    .infoMailSend {
-        left: 220px;
-        right: 220px;
-    }
-
     .containerContactRightSite {
         width: 45%;
     }
@@ -785,11 +762,6 @@ label {
 
 
 @media screen and (max-width: 1000px) {
-    .infoMailSend {
-        left: 150px;
-        right: 150px;
-    }
-
     .containerContactRightSite {
         width: 49%;
     }
@@ -849,14 +821,6 @@ label {
 }
 
 
-@media screen and (max-width: 860px) {
-    .infoMailSend {
-        left: 100px;
-        right: 100px;
-    }
-}
-
-
 @media screen and (max-width: 800px) {
     .containerContactRightSite {
 
@@ -881,14 +845,6 @@ label {
 
     .shadowContacts {
         top: 1020px;
-    }
-}
-
-
-@media screen and (max-width: 760px) {
-    .infoMailSend {
-        left: 0;
-        right: 0;
     }
 }
 
@@ -975,13 +931,6 @@ label {
                 background-position: 390px 8px;
                 width: 370px;
             }
-        }
-    }
-
-    .infoMailSend {
-
-        p {
-            font-size: 35px;
         }
     }
 }
@@ -1092,13 +1041,6 @@ label {
             }
         }
     }
-
-    .infoMailSend {
-
-        p {
-            font-size: 23px;
-        }
-    }
 }
 
 
@@ -1164,6 +1106,14 @@ label {
 @media screen and (max-width: 320px) {
     .shadowContacts {
         top: 1220px;
+    }
+
+    .userFeedbackMailSend {
+        width: 250px;
+
+        p {
+            font-size: 20px;
+        }
     }
 }
 

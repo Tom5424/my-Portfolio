@@ -34,15 +34,16 @@
 
                 <label>
                     <input required type="checkbox" #checkBox>
-                    I agree to the processing of the entered data and the <a routerLink="/dataprotection"> data
-                        protection</a> declaration. *
+                    I agree to the processing of the entered data and the <a routerLink="/dataprotection">
+                        data protection</a> declaration. *
                 </label>
                 <p class="requiredField">* Required fields</p>
 
 
                 <div class="btnContainer">
-                    <button [ngClass]="{'sendBtnDisabled': addBtnDisabledClass == true }" #sendBtn>Send message
-                        :)</button>
+                    <button [ngClass]="{'sendBtnDisabled': addBtnDisabledClass == true }" #sendBtn>
+                        Send message :)
+                    </button>
                 </div>
             </form>
         </div>
@@ -55,9 +56,12 @@
         </div>
     </a>
 
-    <div [ngClass]="{'scaleInCenter': showInfoMailSend == true, 'hide': showInfoMailSend == false}"
-        class="infoMailSend">
-        <p>Email has been Send</p>
-        <button (click)="closeInfo()">OK</button>
+    <!-------------------- Only Displayed if Email has been Sended ------------------>
+    <div [ngClass]="{'overlay': displayOverlay == true}">
+        <div [ngClass]="{'scaleInCenter': showInfoMailSend == true, 'hide': showInfoMailSend == false}"
+            class="userFeedbackMailSend">
+            <p>Email has been Send</p>
+        </div>
     </div>
+    <!-------------------- Only Displayed if Email has been Sended ------------------>
 </section>

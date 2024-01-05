@@ -19,6 +19,7 @@ export class ContactComponentComponent {
   addBtnDisabledClass = false;
   addInputDisabledClass = false;
   showInfoMailSend = false;
+  displayOverlay = false;
 
 
   sendMail() {
@@ -41,6 +42,11 @@ export class ContactComponentComponent {
     checkBox.disabled = true;
     this.addBtnDisabledClass = true;
     this.addInputDisabledClass = true;
+    setTimeout(() => {
+      this.displayOverlay = true;
+      this.showInfoMailSend = true;
+      document.body.style.overflowY = 'hidden';
+    }, 350);
   }
 
 
@@ -56,7 +62,6 @@ export class ContactComponentComponent {
   enableBtnAndInputs(nameField: any, mailField: any, textField: any, sendBtn: any, checkBox: any) {
     this.clearInputFields(nameField, mailField, textField);
     setTimeout(() => {
-      this.showInfoMailSend = true;
       nameField.disabled = false;
       mailField.disabled = false;
       textField.disabled = false;
@@ -65,6 +70,9 @@ export class ContactComponentComponent {
       checkBox.checked = false;
       this.addBtnDisabledClass = false;
       this.addInputDisabledClass = false;
+      this.displayOverlay = false;
+      this.showInfoMailSend = false;
+      document.body.style.overflowY = 'auto';
     }, 3000);
   }
 
@@ -73,10 +81,5 @@ export class ContactComponentComponent {
     nameField.value = '';
     mailField.value = '';
     textField.value = '';
-  }
-
-
-  closeInfo() {
-    this.showInfoMailSend = false;
   }
 }
