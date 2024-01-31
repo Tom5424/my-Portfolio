@@ -13,10 +13,10 @@ export class PortfolioComponentComponent {
     {
       imgProject: 'laptop1.png',
       projectTitle: 'Join',
-      technologiesToBuild: 'HTML | CSS | JavaScript',
-      projectDescription: 'A Kanban board like Jira. Created in a group work. Allows you to create and organize tasks.',
-      linkLiveTest: 'https://tom-petri.net/Join/',
-      linkGithub: 'https://github.com/Tom5424/Join',
+      technologiesToBuild: 'HTML | SCSS | Angular | Firebase',
+      projectDescription: 'A Kanban board like Jira or Tello.',
+      linkLiveTest: 'https://tom-petri.net/Join/login',
+      linkGithub: 'https://github.com/Tom5424/Join-Angular',
     },
 
     {
@@ -31,8 +31,8 @@ export class PortfolioComponentComponent {
     {
       imgProject: 'laptop3.png',
       projectTitle: 'Portfolio Page',
-      technologiesToBuild: 'HTML | CSS | Angular | TypeScript',
-      projectDescription: 'My own Webpage contains my build Projects',
+      technologiesToBuild: 'HTML | SCSS | Angular',
+      projectDescription: 'My own Webpage contains my build Projects.',
       linkLiveTest: '',
       linkGithub: 'https://github.com/Tom5424/my-Portfolio',
     },
