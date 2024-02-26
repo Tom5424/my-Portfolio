@@ -8,17 +8,21 @@
 
 
     <nav class="containerSections">
-        <a [ngClass]="{'linkActive': 'aboutMe' == currentActiveLink}" (click)="activeLink('aboutMe')"
-            href="#aboutMe">About me
+        <a [ngClass]="{'linkActive': currentActiveLink == 'aboutMe'}" (click)="activeLink('aboutMe')" href="#aboutMe">
+            About me
         </a>
 
-        <a [ngClass]="{'linkActive': 'skills' == currentActiveLink}" (click)="activeLink('skills')" href="#skills">
+        <a [ngClass]="{'linkActive': currentActiveLink == 'skills'}" (click)="activeLink('skills')" href="#skills">
             Skills
         </a>
 
-        <a [ngClass]="{'linkActive': 'portfolio' == currentActiveLink}" (click)="activeLink('portfolio')"
+        <a [ngClass]="{'linkActive': currentActiveLink == 'portfolio'}" (click)="activeLink('portfolio')"
             href="#portfolio">
             Portfolio
+        </a>
+
+        <a [ngClass]="{'linkActive': currentActiveLink == 'contact'}" (click)="activeLink('contact')" href="#contact">
+            Contact
         </a>
     </nav>
 </header>

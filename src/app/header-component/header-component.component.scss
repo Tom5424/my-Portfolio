@@ -54,6 +54,16 @@ header {
 
 
 /*********************************  Media Queries  *********************************/
+@media screen and (max-width: 635px) {
+    .containerSections {
+
+        a {
+            font-size: 18px;
+        }
+    }
+}
+
+
 @media screen and (max-width: 540px) {
     .containerSections {
         display: none;
