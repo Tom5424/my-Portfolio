@@ -14,8 +14,8 @@ export class PortfolioComponentComponent {
       imgProject: 'laptop1.png',
       projectTitle: 'Join',
       technologiesToBuild: 'HTML | SCSS | Angular | Firebase',
-      projectDescription: 'A Kanban board like Jira or Tello.',
-      linkLiveTest: 'https://tom-petri.net/Join/login',
+      projectDescription: 'A Kanban Board like Jira or Tello.',
+      linkLiveTest: 'https://tom-petri.net/Join',
       linkGithub: 'https://github.com/Tom5424/Join-Angular',
     },
 
@@ -30,11 +30,11 @@ export class PortfolioComponentComponent {
 
     {
       imgProject: 'laptop3.png',
-      projectTitle: 'Portfolio Page',
-      technologiesToBuild: 'HTML | SCSS | Angular',
-      projectDescription: 'My own Webpage contains my build Projects.',
-      linkLiveTest: '',
-      linkGithub: 'https://github.com/Tom5424/my-Portfolio',
+      projectTitle: 'DABubble',
+      technologiesToBuild: 'HTML | SCSS | Angular | Firebase',
+      projectDescription: 'A Chat Messenger like Slack or Discord.',
+      linkLiveTest: 'https://tom-petri.net/DABubble',
+      linkGithub: 'https://github.com/Tom5424/DABubble',
     },
   ];
 }

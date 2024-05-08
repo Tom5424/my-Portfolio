@@ -19,7 +19,7 @@
             <p class="technologiesToBuild">{{ project.technologiesToBuild }}</p>
             <span class="projectDescription">{{ project.projectDescription }}</span>
             <div class="btnContainer">
-                <a *ngIf="project.linkLiveTest !== ''" href="{{ project.linkLiveTest }}" target="_blank">
+                <a href="{{ project.linkLiveTest }}" target="_blank">
                     <button class="btnLiveTest">Live test</button>
                 </a>
 
